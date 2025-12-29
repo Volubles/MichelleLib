@@ -12,6 +12,7 @@ MichelleLib should be shaded into your plugin's JAR file and can be used by mult
 
 - **Advanced Menu System**: High-level menu definition API with lifecycle hooks, pattern-based layouts, navigation, and back stack support
 - **Folia-Safe Scheduling**: Paper-first scheduler abstraction supporting Entity, Region, Global, and Async schedulers
+- **Paper Brigadier Commands**: Reload-safe `LifecycleEvents.COMMANDS` registration + a compact DSL for building command trees
 - **Thread Safety**: All components are designed with Folia compatibility in mind
 - **Modern Paper APIs**: Uses the latest Paper techniques and recommended patterns
 - **Common Dependencies**: Includes support for commonly used dependencies like PlaceholderAPI, NexoMC, and WorldGuard
@@ -37,6 +38,7 @@ Add MichelleLib as a dependency in your plugin's `pom.xml` and shade it into you
 ## Documentation
 
 - [Menus](docs/menus.md) - Complete guide to the menu system, including API reference, patterns, and best practices
+- [Commands](docs/commands.md) - Brigadier command DSL + registration utilities for the Paper command API
 
 ## License
 
