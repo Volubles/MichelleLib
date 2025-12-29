@@ -1250,3 +1250,5 @@ MenuDefinition.chest(3)
 ---
 
 **Happy menu building!** 🎨
+
+*This file was created by using AI for clearer documentation :)*
