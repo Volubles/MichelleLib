@@ -1180,52 +1180,6 @@ Keep menu definitions in one place and keep item implementations composable.
 
 ---
 
-## Migration from other libraries
-
-### From AnvilGUI / similar
-
-**Old:**
-```java
-new AnvilGUI.Builder()
-  .onClick((slot, state) -> {
-    if (slot == 2) {
-      // handle
-    }
-  })
-  .open(player);
-```
-
-**New:**
-```java
-MenuDefinition.anvil()
-  .onOpen(ctx -> {
-    // Anvil menus work differently - use MenuSession directly
-    MenuSession session = ctx.session();
-    // Handle anvil-specific logic
-  })
-  .build()
-  .open(menus, player);
-```
-
-### From ChestCommands / similar
-
-**Old:**
-```java
-// YAML-based menu definitions
-```
-
-**New:**
-```java
-// Define menus in code with MenuBuilder
-// More type-safe and flexible
-MenuDefinition.chest(3)
-  .title(Component.text("Menu"))
-  .item(13, item)
-  .build();
-```
-
----
-
 ## Best Practices Summary
 
 1. **Always use `MenuActions` for transitions in click handlers**
@@ -1251,4 +1205,4 @@ MenuDefinition.chest(3)
 
 **Happy menu building!** 🎨
 
-*This file was created by using AI for clearer documentation :)*
+*This file was created with the help of AI to improve documentation clarity.*
